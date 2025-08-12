@@ -4,7 +4,7 @@ This custom node is designed to help you free up VRAM during your ComfyUI workfl
 
 ## 🛠️ Installation
 
-Follow these simple steps to get the Memory Purge node up and running in your ComfyUI environment.
+Follow these simple steps to get the node up and running in your ComfyUI environment.
 
 ### Step 1. Clone the Repository
 
@@ -15,7 +15,7 @@ Open your terminal or command prompt and navigate to your ComfyUI installation f
 **For a standard PC installation:**
 ```bash
 cd ComfyUI/custom_nodes/
-git clone https://github.com/PixWizardry/Comfyui_TorchInductorConfig
+git clone https://github.com/PixWizardry/ComfyUI-ForceGarbageCollection
 ```
 
 ### Step 2: Restart ComfyUI
