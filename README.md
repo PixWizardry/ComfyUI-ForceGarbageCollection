@@ -31,7 +31,6 @@ Once everything is installed, you can find the **Memory Purge (GC)** node under 
 *   Navigate to the **VRAM Tools** category
 *   Click on **Memory Purge (GC)**
 
-*   
 ##  Nodes Available
 
 ### Memory Purge (GC)
