@@ -1,6 +1,6 @@
 # ComfyUI Force Garbage Collection
 
-This project was brought to life through vibe coding, with the goal of providing useful tools for the community to experiment with and implement in their workflows. This custom node is designed to help you free up VRAM during your ComfyUI workflows, which can be particularly useful for complex processes or when working with high-resolution images. Helps manage your system's memory by forcing Python's garbage collection to run and clearing PyTorch's CUDA cache.
+This custom node is designed to help you free up VRAM during your ComfyUI workflows, which can be particularly useful for complex processes or when working with high-resolution images. Helps manage your system's memory by forcing Python's garbage collection to run and clearing PyTorch's CUDA cache.
 
 ## 🛠️ Installation
 
