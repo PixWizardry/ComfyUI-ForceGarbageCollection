@@ -58,3 +58,8 @@ The node is designed to be placed between other nodes. Its inputs are *optional*
 *   **Pre-Loading Heavy Models**: Place it right before a checkpoint loader or a LoRA loader to free up VRAM, reducing the chance of an "Out of Memory" error when loading a large model.
 *   **Between Major Workflow Steps**: Insert it after a memory-intensive process, like a high-resolution image generation, before starting the next one (e.g., upscaling).
 *   **Debugging Memory Issues**: If you have a complex workflow that fails due to memory errors, adding this node at various points can help pinpoint which section is causing the VRAM spike.
+
+License
+-------
+This project is licensed under the GNU Affero General Public License v3.0.
+See the LICENSE file for details.
