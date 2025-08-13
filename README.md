@@ -1,5 +1,12 @@
 # ComfyUI Force Garbage Collection
 
+![Python 3.12](https://img.shields.io/badge/Python-3.12-76B900) 
+![NVIDIA RTX Driver Release 580](https://img.shields.io/badge/RTX%20Driver-R580%20U1%20(580.88)-76B900)
+![Pytorch Ver 2.9.0.dev](https://img.shields.io/badge/Pytorch-2.9.0.dev-76B900)
+![Cuda Ver 12.9](https://img.shields.io/badge/Cuda-12.9-76B900)
+
+# WIP
+
 This custom node is designed to help you free up VRAM during your ComfyUI workflows, which can be particularly useful for complex processes or when working with high-resolution images. Helps manage your system's memory by forcing Python's garbage collection to run and clearing PyTorch's CUDA cache.
 
 ## 🛠️ Installation
