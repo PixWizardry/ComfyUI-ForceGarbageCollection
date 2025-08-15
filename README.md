@@ -1,13 +1,15 @@
 # ComfyUI Force Garbage Collection
 
-![Python 3.12](https://img.shields.io/badge/Python-3.12-76B900) 
+![Tested ENV](https://img.shields.io/badge/Tested%20ENV:-lightgrey)
+![Python 3.12.x](https://img.shields.io/badge/Python-3.12.x-76B900) 
 ![NVIDIA RTX Driver Release 580](https://img.shields.io/badge/RTX%20Driver-R580%20U1%20(580.88)-76B900)
-![Pytorch Ver 2.9.0.dev](https://img.shields.io/badge/Pytorch-2.9.0.dev-76B900)
+![Pytorch Ver 2.9.0.dev20250807+cu129](https://img.shields.io/badge/Pytorch-2.9.0.dev+cu129-76B900)
 ![Cuda Ver 12.9](https://img.shields.io/badge/Cuda-12.9-76B900)
+![Platform Windows](https://img.shields.io/badge/Platform-Windows-76B900)
 
 # WIP
 
-This custom node is designed to help you free up VRAM during your ComfyUI workflows, which can be particularly useful for complex processes or when working with high-resolution images. Helps manage your system's memory by forcing Python's garbage collection to run and clearing PyTorch's CUDA cache.
+This custom node is designed to help you free up VRAM cache during your ComfyUI workflows, which can be particularly useful for complex processes or when working with high-resolution images. Helps manage your system's memory by forcing Python's garbage collection to run and clearing PyTorch's CUDA cache. I designed this to work for the RTX Pro 6000. 
 
 ## 🛠️ Installation
 
@@ -44,9 +46,12 @@ Once everything is installed, you can find the **Memory Purge (GC)** node under 
 Here are the details for the **Memory Purge (GC)** node:
 
 ### What it Does
-*   🧹 **Forces Cleanup**: Manually triggers Python's garbage collector to clear out unused data from your computer's RAM.
-*   🗑️ **Clears VRAM**: Empties the PyTorch CUDA cache, which releases memory on your graphics card (VRAM) that is no longer being used by active processes.
-*   ➡️ **Seamless Passthrough**: Allows you to insert it anywhere in your workflow without interrupting the data flow. It takes in common data types (like models, images, and latents) and passes them straight through to the next node.
+*   **Forces Cleanup**: Manually triggers Python's garbage collector to clear out unused data from your computer's RAM.
+*   **Clears VRAM**: Empties the PyTorch CUDA cache, which releases memory on your graphics card (VRAM) that is no longer being used by active processes.
+*   **Seamless Passthrough**: Allows you to insert it anywhere in your workflow without interrupting the data flow. It takes in common data types (like models, images, and latents) and passes them straight through to the next node.
+
+### What it Doesn't Do
+*   **Unload Models**
 
 ### Key Inputs
 The node is designed to be placed between other nodes. Its inputs are *optional* passthroughs to avoid breaking workflow connections:
